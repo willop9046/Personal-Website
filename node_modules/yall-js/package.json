@@ -1,0 +1,53 @@
+{
+  "name": "yall-js",
+  "version": "4.0.2",
+  "description": "Yet Another Lazy Loader",
+  "type": "module",
+  "source": "./src/index.js",
+  "exports": "./dist/yall.mjs",
+  "main": "./dist/yall.cjs",
+  "module": "./dist/yall.js",
+  "unpkg": "./dist/yall.umd.js",
+  "scripts": {
+    "clean": "rm -rf ./dist",
+    "build": "npm run clean && npx microbundle && npm run copy",
+    "copy": "cp -v dist/yall.js ./test/js/yall.js && cp -v dist/yall.js.map ./test/js/yall.js.map",
+    "dev": "npm run clean && npx microbundle watch",
+    "lint": "npx eslint ./src/**.js ./src/**/*.js",
+    "test": "npm run lint && npm run build && node ./http.js",
+    "postinstall": "node -e \"console.log('\\u001b[31m\\u001b[1mThanks for using yall.js! This is version 4, which remove support for lazy loading img, picture, and iframe elements. You should use native lazy loading for those use cases. Learn more at \\u001b[34mhttps://github.com/malchata/yall.js\\u001b[0m')\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/malchata/yall.js.git"
+  },
+  "keywords": [
+    "lazy load",
+    "lazy loader",
+    "lazy loading",
+    "intersection observer",
+    "IntersectionObserver",
+    "mutation observer",
+    "MutationObserver",
+    "requestIdleCallback",
+    "images",
+    "video",
+    "iframe",
+    "web performance",
+    "requestAnimationFrame"
+  ],
+  "author": "Jeremy L. Wagner <jeremy.l.wagner@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/malchata/yall.js/issues"
+  },
+  "homepage": "https://github.com/malchata/yall.js#readme",
+  "devDependencies": {
+    "eslint": "^8.16.0",
+    "express": "^4.18.1",
+    "microbundle": "^0.15.0"
+  },
+  "files": [
+    "dist"
+  ]
+}
