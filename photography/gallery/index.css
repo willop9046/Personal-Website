@@ -255,6 +255,36 @@ section.gallery{
 .card:nth-child(15){
   animation-delay: calc(15* var(--stagger-delay));
 }
+.card:nth-child(16){
+  animation-delay: calc(16* var(--stagger-delay));
+}
+.card:nth-child(17){
+  animation-delay: calc(17* var(--stagger-delay));
+}
+.card:nth-child(18){
+  animation-delay: calc(18* var(--stagger-delay));
+}
+.card:nth-child(19){
+  animation-delay: calc(19* var(--stagger-delay));
+}
+.card:nth-child(20){
+  animation-delay: calc(20* var(--stagger-delay));
+}
+.card:nth-child(21){
+  animation-delay: calc(21* var(--stagger-delay));
+}
+.card:nth-child(22){
+  animation-delay: calc(22* var(--stagger-delay));
+}
+.card:nth-child(23){
+  animation-delay: calc(23* var(--stagger-delay));
+}
+.card:nth-child(24){
+  animation-delay: calc(24* var(--stagger-delay));
+}
+.card:nth-child(25){
+  animation-delay: calc(25* var(--stagger-delay));
+}
 
 
 
